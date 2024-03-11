@@ -1,36 +1,35 @@
 import StackIcon from "tech-stack-icons";
 import person from "./assets/me.jpg";
 
-const Introduction = () => {
+export default function Introduction() {
   return (
-    <div className="flex flex-col mx-auto my-0 py-[5rem] h-dvh ">
-      <div className="flex flex-col gap-[3.5rem]">
-        <div className="flex flex-col items-center gap-3 px-8 py-4">
+    <div className="grid place-items-center lg:py-[8rem] h-dvh">
+      <div className="flex flex-col gap-[4rem] mt-28 lg:mt-8 px-[1.5rem]">
+        <div className="flex flex-col lg:gap-[10rem] gap-8 lg:flex-row-reverse transition-all duration-200">
           <img
             src={person}
             alt=""
-            className="md:h-[20rem] md:w-[20rem] h-[18rem] w-[18em] object-cover border-solid border-black border-[2px] rounded-[50%] mt-4"
+            className="mx-auto md:h-[20rem] md:w-[20rem] h-[18rem] w-[18em] object-cover border-solid border-black border-[3px] rounded-[50%]"
           />
-          <div className="flex flex-col text-center">
-            <h1 className="leading-[3.5rem] text-[2.6em] font-bold mt-4">
-              Computer Science Student
-            </h1>
-            <p className="text-[20px] font-sans text-[#555] mt-4">
-              hi im raves ang comsci student na may pangarap.
-              based in davao. 📍
-            </p>
+          <div className="flex items-center max-w-[37rem]">
+            <div className="flex flex-col gap-6 text-center lg:text-start">
+              <h1 className="leading-[3.5rem] lg:leading-[4.5rem] text-[2.6em] lg:text-[3.4rem] font-bold">
+                Computer Science Student
+              </h1>
+              <p className="text-[20px] font-sans text-[#555]">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis ea accusamus repellendus excepturi placeat iusto! 📍
+              </p>
+            </div>
           </div>
         </div>
-        <div className="flex flex-wrap items-center justify-center gap-8">
+        <div className="flex flex-wrap items-center justify-center gap-8 lg:justify-start">
           <StackIcon name="flutter" className="stack-icon" />
           <StackIcon name="html5" className="stack-icon" />
           <StackIcon name="css3" className="stack-icon" />
           <StackIcon name="js" className="stack-icon" />
-          <StackIcon name="firebase" className="stack-icon" />
+          <StackIcon name="tailwindcss" className="stack-icon" />
         </div>
       </div>
     </div>
   );
-};
-
-export default Introduction;
+}

@@ -1,4 +1,4 @@
-const Navbar = () => {
+export default function Navbar() {
   return (
     <nav className="fixed flex items-center justify-end w-full h-auto p-6 font-bold bg-white nav-shadow">
       <svg
@@ -23,4 +23,3 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
