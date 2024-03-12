@@ -3,10 +3,45 @@
 @tailwind utilities;
 
 
+@font-face{
+    font-family: 'HelveticaNowDisplay-Black';
+    src: url('src/assets/font/HelveticaNowDisplay-Black.ttf');
+  }
+
+@font-face{
+  font-family: 'HelveticaNowDisplay-Bold';
+  src: url('src/assets/font/HelveticaNowDisplay-Bold.ttf');
+}
+
+@font-face{
+  font-family: 'HelveticaNowDisplay-Light';
+  src: url('src/assets/font/HelveticaNowDisplay-Light.ttf');
+}
+
+@font-face{
+  font-family: 'HelveticaNowDisplay-Thin';
+  src: url('src/assets/font/HelveticaNowDisplay-Thin.ttf');
+}
+
+@font-face{
+  font-family: 'HelveticaNowDisplay-Regular';
+  src: url('src/assets/font/HelveticaNowDisplay-Regular.ttf');
+}
+
+@font-face{
+  font-family: 'HelveticaNowDisplay-Medium';
+  src: url('src/assets/font/HelveticaNowDisplay-Medium.ttf');
+}
+
+
 *{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+body{
+  font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 
@@ -19,18 +54,12 @@ a{
   color: black;
 }
 
-.stack-icon{
-  height: 3rem
+.hero-animated{
+  transition: all 1s ease-in-out;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
 }
 
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5
 }

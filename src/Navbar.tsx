@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <nav className="fixed flex items-center justify-end w-full h-auto p-6 font-bold bg-white nav-shadow">
+    <nav className="fixed flex items-center justify-end w-full h-20 px-6 font-bold bg-white lg:px-16 nav-shadow">
       <svg
         className="h-5 lg:hidden"
         viewBox="0 0 72 48"
@@ -13,7 +13,7 @@ export default function Navbar() {
         />
       </svg>
 
-      <div className="hidden space-x-6 text-xl lg:block">
+      <div className="hidden space-x-6 text-lg lg:block font-hnd-light">
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Projects</a>
