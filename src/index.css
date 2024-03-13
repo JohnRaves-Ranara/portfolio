@@ -55,8 +55,29 @@ a{
 }
 
 .hero-animated{
-  transition: all 1s ease-in-out;
+  /* transition: all 1s ease-in-out; */
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+
+.hero-image{
+  background-size: cover;
+  background-image: url('src/assets/me_1 - Copy.jpg');
+  border: 3px solid black;
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  overflow: hidden;
+  animation: morph 5s linear infinite;
+}
+
+@keyframes morph{
+  0%, 100% {
+  border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+  }
+  34% {
+    border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+  }
+  67% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+  }
 }
 
 

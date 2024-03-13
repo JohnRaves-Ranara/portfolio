@@ -13,11 +13,10 @@ export default function Navbar() {
         />
       </svg>
 
-      <div className="hidden space-x-6 text-lg lg:block font-hnd-light">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+      <div className="hidden space-x-6 text-lg lg:block font-hnd-medium">
+        <a href="#">about</a>
+        <a href="#">projects</a>
+        <a href="#">contact</a>
       </div>
     </nav>
   );
