@@ -19,7 +19,8 @@ export default {
         'hnd-thin' : ['HelveticaNowDisplay-Light', 'sans-serif']
       },
       screens: {
-        'mobile-s' : '375px'
+        'mobile-s' : '375px',
+        'mobile-l' : '425px'
       }
     },
   },

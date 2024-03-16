@@ -4,8 +4,8 @@ import test from "./assets/Vector (1).svg";
 
 export default function Introduction() {
   return (
-    <div className="grid place-items-center lg:py-[8rem] h-dvh">
-      <div className="flex flex-col gap-[4rem] mt-28 lg:mt-8 px-[1.5rem]">
+    <div className="grid place-items-center h-dvh">
+      <div className="flex flex-col gap-[4rem] mt-28 lg:mt-16 px-[1.5rem]">
         <div className="flex flex-col lg:gap-[6rem] gap-8 lg:flex-row-reverse transition-all duration-200">
           <div className="mx-auto hero-image md:h-[20rem] md:w-[20rem] h-[18rem] w-[18em]"></div>
           <div className="flex items-center max-w-[37rem]">
@@ -21,11 +21,11 @@ export default function Introduction() {
         </div>
         <div className="flex flex-wrap items-center justify-center gap-8 lg:justify-start">
           {/* <img src={test} alt="" className="h-[3rem] mobile-s:h-[2.5rem]"/> */}
-          <StackIcon name="flutter" className="h-[3rem] mobile-s:h-[2.5rem]" />
-          <StackIcon name="html5" className="h-[3rem] mobile-s:h-[2.5rem]" />
-          <StackIcon name="css3" className="h-[3rem] mobile-s:h-[2.5rem]" />
-          <StackIcon name="js" className="h-[3rem] mobile-s:h-[2.5rem]" />
-          <StackIcon name="tailwindcss" className="h-[3rem] mobile-s:h-[2.5rem]" />
+          <StackIcon name="flutter" className="h-[2.5rem] mobile-l:h-[3rem]" />
+          <StackIcon name="html5" className="h-[2.5rem] mobile-l:h-[3rem]" />
+          <StackIcon name="css3" className="h-[2.5rem] mobile-l:h-[3rem]" />
+          <StackIcon name="js" className="h-[2.5rem] mobile-l:h-[3rem]" />
+          <StackIcon name="tailwindcss" className="h-[2.5rem] mobile-l:h-[3rem]" />
         </div>
       </div>
     </div>
