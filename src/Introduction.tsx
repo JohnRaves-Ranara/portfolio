@@ -1,13 +1,11 @@
 import StackIcon from "tech-stack-icons";
-import person from "./assets/me_1 - Copy.jpg";
-import test from "./assets/Vector (1).svg";
 
 export default function Introduction() {
   return (
-    <div className="grid place-items-center h-dvh">
-      <div className="flex flex-col gap-[4rem] mt-28 lg:mt-16 px-[1.5rem]">
+    <header className="grid py-8 place-items-center lg:h-dvh">
+      <div className="flex flex-col gap-16 mt-28 lg:mt-16 px-[1.5rem]">
         <div className="flex flex-col lg:gap-[6rem] gap-8 lg:flex-row-reverse transition-all duration-200">
-          <div className="mx-auto hero-image md:h-[20rem] md:w-[20rem] h-[18rem] w-[18em]"></div>
+          <div className="mx-auto hero-image md:h-[20rem] md:w-[20rem] h-[18rem] w-[18rem]"></div>
           <div className="flex items-center max-w-[37rem]">
             <div className="flex flex-col gap-6 text-center lg:text-start">
               <h1 className="leading-[3.5rem] lg:leading-[4.5rem] text-[2.5em] sm:text-[3rem] lg:text-[4rem] font-hnd-black">
@@ -28,6 +26,6 @@ export default function Introduction() {
           <StackIcon name="tailwindcss" className="h-[2.5rem] mobile-l:h-[3rem]" />
         </div>
       </div>
-    </div>
+    </header>
   );
 }

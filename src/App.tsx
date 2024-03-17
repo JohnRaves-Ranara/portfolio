@@ -2,6 +2,7 @@
 import Navbar from './Navbar'
 import Introduction from './Introduction';
 import './index.css';
+import Projects from './Projects'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -10,6 +11,7 @@ function App() {
       <div>
         <Navbar></Navbar>
         <Introduction></Introduction>
+        <Projects></Projects>
       </div>
 
   )

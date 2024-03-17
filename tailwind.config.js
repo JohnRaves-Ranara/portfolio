@@ -6,10 +6,6 @@ export default {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'hero-image': "url('src/assets/me_1 - Copy.jpg')",
-        // 'footer-texture': "url('/img/footer-texture.png')",
-      },
       fontFamily:{
         'hnd-black' : ['HelveticaNowDisplay-Black','sans-serif'],
         'hnd-bold' : ['HelveticaNowDisplay-Bold', 'sans-serif'],
@@ -19,7 +15,8 @@ export default {
         'hnd-thin' : ['HelveticaNowDisplay-Light', 'sans-serif']
       },
       screens: {
-        'mobile-s' : '375px',
+        'mobile-s' : '320px',
+        'mobile-m' : '375px',
         'mobile-l' : '425px'
       }
     },
