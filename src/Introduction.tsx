@@ -2,7 +2,7 @@ import StackIcon from "tech-stack-icons";
 
 export default function Introduction() {
   return (
-    <header className="flex items-center justify-center py-8 lg:h-dvh">
+    <header className="flex flex-col items-center justify-center py-8 lg:h-dvh">
       <div className="flex flex-col gap-16 px-6 mt-28 lg:mt-16">
         <div className="flex flex-col lg:gap-[6rem] gap-8 lg:flex-row-reverse transition-all duration-200">
           <div className="mx-auto hero-image md:h-[20rem] md:w-[20rem] h-[18rem] w-[18rem]"></div>

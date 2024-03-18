@@ -19,7 +19,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <div
-      className={`flex flex-col items-center gap-12 px-4 lg:px-6 lg:gap-0 w-full lg:justify-evenly ${
+      className={`flex flex-col items-center gap-8 px-4 lg:px-6 lg:gap-0 w-full lg:justify-evenly ${
         id%2==0 ? "lg:flex-row-reverse" : "lg:flex-row"
       }`}
     >
