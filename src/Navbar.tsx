@@ -14,9 +14,9 @@ export default function Navbar() {
       </svg>
 
       <div className="hidden space-x-6 text-lg lg:block font-hnd-medium">
-        <a href="#">about</a>
-        <a href="#">projects</a>
-        <a href="#">contact</a>
+        <a href="#about-section">about</a>
+        <a href="#projects-section">projects</a>
+        <a href="#contact-section">contact</a>
       </div>
     </nav>
   );

@@ -14,6 +14,10 @@ export default function Introduction() {
               <p className="text-[20px] text-[#555] font-hnd-thin">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis ea accusamus repellendus excepturi placeat iusto! 📍
               </p>
+              <div className="flex justify-start gap-6 ">
+                <a href="https://www.linkedin.com/in/johnraves-ranara/" target="_blank"><img src="src\assets\linkedin.svg" alt="" className="size-[30px]"/></a>
+                <a href="https://github.com/JohnRaves-Ranara" target="_blank"><img src="src\assets\github-2.svg" alt="" className="size-[30px]"/></a>
+              </div>
             </div>
           </div>
         </div>

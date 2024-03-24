@@ -3,6 +3,9 @@ import Navbar from './Navbar'
 import Introduction from './Introduction';
 import './index.css';
 import Projects from './Projects'
+import About from './About'
+import Contact from './Contact'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -11,7 +14,9 @@ function App() {
       <div>
         <Navbar></Navbar>
         <Introduction></Introduction>
+        <About></About>
         <Projects></Projects>
+        <Contact></Contact>
       </div>
 
   )
