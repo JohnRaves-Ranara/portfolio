@@ -1,8 +1,4 @@
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-
-
 export default function Contact(){
 
     const contacts = [
@@ -20,7 +16,7 @@ export default function Contact(){
 
     return (
         <section id="contact-section" className="flex items-center justify-center py-20 bg-[#f9f9f9]">
-            <div className="flex flex-col gap-12 lg:w-[70vw]">
+            <div className="flex flex-col gap-16 lg:w-[70vw]">
                 <div className='space-y-2'>
                     <h1 className="text-[1.1rem] text-blue-400 font-hnd-black leading-[2rem] text-center lg:text-start">CONTACT</h1>
                     <h1 className='text-[1.3rem] font-hnd-black leading-[2rem] text-center lg:text-start'>Looking forward to working with you! 👇</h1>
@@ -29,7 +25,7 @@ export default function Contact(){
                     {contacts.map((contact, index) => {
                         return (
                             <div className='flex flex-col items-center gap-4 lg:flex-row lg:text-start'>
-                                <div className='size-[24px] box-content p-4 rounded-[50%] border-2 border-gray-800 border-solid'>
+                                <div className='size-[24px] box-content p-4 rounded-[50%] icon-shadow'>
                                     {contact.icon}
                                 </div>
                                 <div className='text-center lg:text-start'>

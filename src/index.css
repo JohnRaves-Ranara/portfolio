@@ -81,9 +81,9 @@ a{
 }
 
 .icon-shadow{
-  box-shadow: -1px -1px 22px 0px rgba(216,216,216,0.75);
--webkit-box-shadow: -1px -1px 22px 0px rgba(216,216,216,0.75);
--moz-box-shadow: -1px -1px 22px 0px rgba(216,216,216,0.75);
+  box-shadow: 2px -1px 22px -6px rgba(188,188,188,0.75);
+  -webkit-box-shadow: 2px -1px 22px -6px rgba(188,188,188,0.75);
+  -moz-box-shadow: 2px -1px 22px -6px rgba(188,188,188,0.75);
 }
 
 

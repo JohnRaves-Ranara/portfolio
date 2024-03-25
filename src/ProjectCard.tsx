@@ -6,6 +6,8 @@ interface ProjectCardProps {
   images: string[];
   id: number;
   bgColor: string;
+  link: string;
+  repo: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -15,6 +17,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   isMobile,
   images,
   bgColor,
+  link,
+  repo,
   id,
 }) => {
   const bgColorClases: any = {
@@ -68,7 +72,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </div>
         <div className="flex justify-center gap-8 mt-12 text-base font-hnd-medium">
           <div>
-            <a className="flex items-center gap-2" href="" target="_blank">
+            <a className="flex items-center gap-2" href={repo} target="_blank">
               <p>Repo</p>
               <img
                 src="src\assets\github-2.svg"
@@ -77,16 +81,23 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               />
             </a>
           </div>
-          <div>
-            <a className="flex items-center gap-2" href="" target="_blank">
-              <p>Visit</p>
-              <img
-                src="src\assets\goto-icon-outline.svg"
-                alt=""
-                className="size-[25px]"
-              />
-            </a>
-          </div>
+          {/* {typhoonista isnt deployed yet} */}
+          {name === "Typhoonista" ? null : (
+            <div>
+              <a
+                className="flex items-center gap-2"
+                href={link}
+                target="_blank"
+              >
+                <p>{isMobile ? "Download APK" : "Visit"}</p>
+                <img
+                  src="src\assets\goto-icon-outline.svg"
+                  alt=""
+                  className="size-[25px]"
+                />
+              </a>
+            </div>
+          )}
         </div>
       </section>
     </div>

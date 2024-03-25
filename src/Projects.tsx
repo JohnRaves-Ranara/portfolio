@@ -3,9 +3,20 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
-    name: "VisioLife",
+    name: "Typhoonista",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis laudantium, rem perferendis a perspiciatis suscipit! Alias iusto distinctio explicabo ea ducimus quisquam deserunt odio tempora",
+      "Typhoonista is our Bachelor's Degree thesis and is a dashboard web-app that aims to aid the Department of Agriculture by providing damage cost forecasts of typhoon-induced rice crop damages using various ML models. I was responsible for the frontend and database-side backend of the website.",
+    techstack: ["Flutter", "Firebase"],
+    isMobile: false,
+    images: ["src/assets/typhoonista_banner.png"],
+    bgColor: "blue",
+    repo: "https://github.com/JohnRaves-Ranara/typhoonista_",
+    link: "",
+    id: 1,
+  },
+  {
+    name: "VisioLife",
+    description: "VisioLife is a mobile-app project I made for my Software Engineering 1 and 2 course. It is a vision board app that helps users keep track of their long-term and short-term life goals. It also features a virtual pet companion the user can upgrade by completing their goals.",
     techstack: ["Flutter", "Firebase"],
     isMobile: true,
     images: [
@@ -13,32 +24,24 @@ const projects = [
       "src/assets/Screenshot_1710617644.png",
     ],
     bgColor: "red",
-    id: 1,
-  },
-  {
-    name: "Typhoonista",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis laudantium, rem perferendis a perspiciatis suscipit! Alias iusto distinctio explicabo ea ducimus quisquam deserunt odio tempora",
-    techstack: ["Flutter", "Firebase"],
-    isMobile: false,
-    images: ["src/assets/typhoonista_banner.png"],
-    bgColor: "blue",
+    repo: "https://github.com/JohnRaves-Ranara/VisioLife",
+    link: "https://johnraves-ranara.github.io/band-website/",
     id: 2,
   },
   {
     name: "Band Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis laudantium, rem perferendis a perspiciatis suscipit! Alias iusto distinctio explicabo ea ducimus quisquam deserunt odio tempora",
+    description: "A personal project website that features the famous albums of one of my favorite indie bands—Far Caspian. This site also has its own music player where you can listen to each track. I built this site to enhance my knowledge in manipulating the DOM with Javascript.",
     techstack: ["HTML", "CSS", "Javascript"],
     isMobile: false,
     images: ["src/assets/bandwebsite-snapshot.png"],
     bgColor: "lime",
+    repo: "https://github.com/JohnRaves-Ranara/band-website",
+    link: "https://johnraves-ranara.github.io/band-website/",
     id: 3,
   },
   {
     name: "Gympulse",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis laudantium, rem perferendis a perspiciatis suscipit! Alias iusto distinctio explicabo ea ducimus quisquam deserunt odio tempora",
+    description: "A workout app I made for keeping track of the sequence of my workouts. ",
     techstack: ["Flutter", "Hive"],
     isMobile: true,
     images: [
@@ -46,6 +49,8 @@ const projects = [
       "src/assets/localhost_53943_ (1).png",
     ],
     bgColor: "green",
+    repo: "https://github.com/JohnRaves-Ranara/workout_app",
+    link: "https://johnraves-ranara.github.io/band-website/",
     id: 4,
   },
 ];
@@ -53,7 +58,7 @@ const projects = [
 export default function Projects() {
   return (
     <>
-      <div id="projects-section" className="mx-6 my-8 max-w-fit lg:mx-auto">
+      <div id="projects-section" className="px-6 mx-auto mt-32 mb-16 max-w-fit">
         <h1 className="text-[1rem] text-blue-400 font-hnd-black leading-[2rem] text-center mb-1">
           PORTFOLIO
         </h1>
@@ -71,6 +76,8 @@ export default function Projects() {
             images={project.images}
             bgColor={project.bgColor}
             id={project.id}
+            link={project.link}
+            repo={project.repo}
           />
         ))}
       </div>
