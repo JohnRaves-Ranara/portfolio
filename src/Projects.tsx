@@ -1,5 +1,12 @@
 // import StackIcon from "tech-stack-icons";
 import ProjectCard from "./ProjectCard";
+import typhoonista from './assets/typhoonista_banner.png'
+import visiolife1 from "./assets/Screenshot_1710619145.png"
+import visiolife2 from "./assets/Screenshot_1710617644.png"
+import bandwebsite from "./assets/bandwebsite-snapshot.png"
+import gym1 from "./assets/localhost_53943_ (2).png"
+import gym2 from "./assets/localhost_53943_ (1).png"
+
 
 const projects = [
   {
@@ -8,7 +15,7 @@ const projects = [
       "Typhoonista is our Bachelor's Degree thesis and is a dashboard web-app that aims to aid the Department of Agriculture by providing damage cost forecasts of typhoon-induced rice crop damages using various ML models. I was responsible for the frontend and database-side backend of the website.",
     techstack: ["Flutter", "Firebase"],
     isMobile: false,
-    images: ["src/assets/typhoonista_banner.png"],
+    images: [`${typhoonista}`],
     bgColor: "blue",
     repo: "https://github.com/JohnRaves-Ranara/typhoonista_",
     link: "",
@@ -20,8 +27,8 @@ const projects = [
     techstack: ["Flutter", "Firebase"],
     isMobile: true,
     images: [
-      "src/assets/Screenshot_1710619145.png",
-      "src/assets/Screenshot_1710617644.png",
+      `${visiolife1}`,
+      `${visiolife2}`,
     ],
     bgColor: "red",
     repo: "https://github.com/JohnRaves-Ranara/VisioLife",
@@ -33,7 +40,7 @@ const projects = [
     description: "A personal project website that features the famous albums of one of my favorite indie bands—Far Caspian. This site also has its own music player where you can listen to each track. I built this site to enhance my knowledge in manipulating the DOM with Javascript.",
     techstack: ["HTML", "CSS", "Javascript"],
     isMobile: false,
-    images: ["src/assets/bandwebsite-snapshot.png"],
+    images: [`${bandwebsite}`],
     bgColor: "lime",
     repo: "https://github.com/JohnRaves-Ranara/band-website",
     link: "https://johnraves-ranara.github.io/band-website/",
@@ -45,8 +52,8 @@ const projects = [
     techstack: ["Flutter", "Hive"],
     isMobile: true,
     images: [
-      "src/assets/localhost_53943_ (2).png",
-      "src/assets/localhost_53943_ (1).png",
+      `${gym1}`,
+      `${gym2}`,
     ],
     bgColor: "green",
     repo: "https://github.com/JohnRaves-Ranara/workout_app",

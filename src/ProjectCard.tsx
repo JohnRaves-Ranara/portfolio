@@ -1,3 +1,6 @@
+import githubicon from './assets/github-2.svg'
+import goto from "./assets/goto-icon-outline.svg"
+
 interface ProjectCardProps {
   name: string;
   description: string;
@@ -75,7 +78,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <a className="flex items-center gap-2" href={repo} target="_blank">
               <p>Repo</p>
               <img
-                src="src/assets/github-2.svg"
+                src={githubicon}
                 alt=""
                 className="size-[25px]"
               />
@@ -91,7 +94,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               >
                 <p>{isMobile ? "Download APK" : "Visit"}</p>
                 <img
-                  src="src/assets/goto-icon-outline.svg"
+                  src={goto}
                   alt=""
                   className="size-[25px]"
                 />
