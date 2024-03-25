@@ -25,7 +25,7 @@ const projects = [
     ],
     bgColor: "red",
     repo: "https://github.com/JohnRaves-Ranara/VisioLife",
-    link: "https://johnraves-ranara.github.io/band-website/",
+    link: "https://mega.nz/file/NNcCUTxI#Bs07RbmzSMY2E6parJjVD_gapEB3jB8VUW4PkZkdOBI",
     id: 2,
   },
   {
@@ -50,7 +50,7 @@ const projects = [
     ],
     bgColor: "green",
     repo: "https://github.com/JohnRaves-Ranara/workout_app",
-    link: "https://johnraves-ranara.github.io/band-website/",
+    link: "https://mega.nz/file/EZ0SwTRI#Bs07RbmzSMY2E6parJjVD_gapEB3jB8VUW4PkZkdOBI",
     id: 4,
   },
 ];
