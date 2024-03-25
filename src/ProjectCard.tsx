@@ -75,7 +75,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <a className="flex items-center gap-2" href={repo} target="_blank">
               <p>Repo</p>
               <img
-                src="src\assets\github-2.svg"
+                src="src/assets/github-2.svg"
                 alt=""
                 className="size-[25px]"
               />
@@ -91,7 +91,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               >
                 <p>{isMobile ? "Download APK" : "Visit"}</p>
                 <img
-                  src="src\assets\goto-icon-outline.svg"
+                  src="src/assets/goto-icon-outline.svg"
                   alt=""
                   className="size-[25px]"
                 />

@@ -15,8 +15,8 @@ export default function Introduction() {
               CS student passionate about crafting innovative software solutions. Dedicated to continuous improvement. Based in Davao, Philippines.📍
               </p>
               <div className="flex justify-center gap-6 lg:justify-start ">
-                <a href="https://www.linkedin.com/in/johnraves-ranara/" target="_blank"><img src="src\assets\linkedin.svg" alt="" className="size-[30px]"/></a>
-                <a href="https://github.com/JohnRaves-Ranara" target="_blank"><img src="src\assets\github-2.svg" alt="" className="size-[30px]"/></a>
+                <a href="https://www.linkedin.com/in/johnraves-ranara/" target="_blank"><img src="src/assets/linkedin.svg" alt="" className="size-[30px]"/></a>
+                <a href="https://github.com/JohnRaves-Ranara" target="_blank"><img src="src/assets/github-2.svg" alt="" className="size-[30px]"/></a>
               </div>
             </div>
           </div>

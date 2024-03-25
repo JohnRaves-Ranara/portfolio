@@ -5,32 +5,32 @@
 
 @font-face{
     font-family: 'HelveticaNowDisplay-Black';
-    src: url('src/assets/font/HelveticaNowDisplay-Black.ttf');
+    src: url('./assets/font/HelveticaNowDisplay-Black.ttf');
   }
 
 @font-face{
   font-family: 'HelveticaNowDisplay-Bold';
-  src: url('src/assets/font/HelveticaNowDisplay-Bold.ttf');
+  src: url('./assets/font/HelveticaNowDisplay-Bold.ttf');
 }
 
 @font-face{
   font-family: 'HelveticaNowDisplay-Light';
-  src: url('src/assets/font/HelveticaNowDisplay-Light.ttf');
+  src: url('./assets/font/HelveticaNowDisplay-Light.ttf');
 }
 
 @font-face{
   font-family: 'HelveticaNowDisplay-Thin';
-  src: url('src/assets/font/HelveticaNowDisplay-Thin.ttf');
+  src: url('./assets/font/HelveticaNowDisplay-Thin.ttf');
 }
 
 @font-face{
   font-family: 'HelveticaNowDisplay-Regular';
-  src: url('src/assets/font/HelveticaNowDisplay-Regular.ttf');
+  src: url('./assets/font/HelveticaNowDisplay-Regular.ttf');
 }
 
 @font-face{
   font-family: 'HelveticaNowDisplay-Medium';
-  src: url('src/assets/font/HelveticaNowDisplay-Medium.ttf');
+  src: url('./assets/font/HelveticaNowDisplay-Medium.ttf');
 }
 
 
@@ -61,7 +61,7 @@ a{
 
 .hero-image{
   background-size: cover;
-  background-image: url('./src/assets/me-2.jpg');
+  background-image: url('./assets/me-2.jpg');
   border: 3px solid black;
   border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
   overflow: hidden;
