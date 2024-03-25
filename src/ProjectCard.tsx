@@ -5,7 +5,7 @@ interface ProjectCardProps {
   isMobile: boolean;
   images: string[];
   id: number;
-  bgColor: string;
+  // bgColor: string;
   link: string;
   repo: string;
 }
@@ -16,7 +16,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   techstack,
   isMobile,
   images,
-  bgColor,
+  // bgColor,
   link,
   repo,
   id,

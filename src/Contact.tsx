@@ -22,7 +22,7 @@ export default function Contact(){
                     <h1 className='text-[1.3rem] font-hnd-black leading-[2rem] text-center lg:text-start'>Looking forward to working with you! 👇</h1>
                 </div>
                 <div className='flex flex-col gap-12 lg:flex-row'>
-                    {contacts.map((contact, index) => {
+                    {contacts.map((contact) => {
                         return (
                             <div className='flex flex-col items-center gap-4 lg:flex-row lg:text-start'>
                                 <div className='size-[24px] box-content p-4 rounded-[50%] icon-shadow'>

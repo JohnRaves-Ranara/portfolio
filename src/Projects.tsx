@@ -1,4 +1,4 @@
-import StackIcon from "tech-stack-icons";
+// import StackIcon from "tech-stack-icons";
 import ProjectCard from "./ProjectCard";
 
 const projects = [
@@ -74,7 +74,7 @@ export default function Projects() {
             techstack={project.techstack}
             isMobile={project.isMobile}
             images={project.images}
-            bgColor={project.bgColor}
+            // bgColor={project.bgColor}
             id={project.id}
             link={project.link}
             repo={project.repo}
