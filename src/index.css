@@ -61,7 +61,7 @@ a{
 
 .hero-image{
   background-size: cover;
-  background-image: url('src/assets/me-2.jpg');
+  background-image: url('./src/assets/me-2.jpg');
   border: 3px solid black;
   border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
   overflow: hidden;
