@@ -21,12 +21,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   repo,
   id,
 }) => {
-  const bgColorClases: any = {
-    red: "bg-red-200",
-    blue: "bg-blue-200",
-    green: "bg-green-200",
-    lime: "bg-lime-200",
-  };
+  // const bgColorClases: any = {
+  //   red: "bg-red-200",
+  //   blue: "bg-blue-200",
+  //   green: "bg-green-200",
+  //   lime: "bg-lime-200",
+  // };
 
   return (
     <div
