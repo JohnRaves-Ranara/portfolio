@@ -37,7 +37,7 @@ const projects = [
   },
   {
     name: "Band Website",
-    description: "A personal project website that features the famous albums of one of my favorite indie bands—Far Caspian. This site also has its own music player where you can listen to each track. I built this site to enhance my knowledge in manipulating the DOM with Javascript.",
+    description: "A personal project website that features the famous albums of one of my favorite indie bands—Day Wave. This site also has its own music player where you can listen to each track. I built this site to enhance my knowledge in manipulating the DOM with Javascript.",
     techstack: ["HTML", "CSS", "Javascript"],
     isMobile: false,
     images: [`${bandwebsite}`],
