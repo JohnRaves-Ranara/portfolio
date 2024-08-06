@@ -1,5 +1,5 @@
-import githubicon from './assets/github-2.svg'
-import goto from "./assets/goto-icon-outline.svg"
+import githubicon from "./assets/github-2.svg";
+import goto from "./assets/goto-icon-outline.svg";
 
 interface ProjectCardProps {
   name: string;
@@ -11,6 +11,7 @@ interface ProjectCardProps {
   // bgColor: string;
   link: string;
   repo: string;
+  isUnderDevelopment: boolean;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -19,6 +20,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   techstack,
   isMobile,
   images,
+  isUnderDevelopment,
   // bgColor,
   link,
   repo,
@@ -65,10 +67,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       {/* {project information} */}
       <section className="text-center max-w-[350px]">
         {/* {name and description} */}
-        <h1 className="mb-4 text-xl font-hnd-bold">{name}</h1>
+        <div className="mb-4">
+          <h1 className="text-xl font-hnd-bold">{name}</h1>
+          {isUnderDevelopment && <p>{`(in development)`}</p>}
+        </div>
         <p className="mb-4 text-base font-hnd-thin">{description}</p>
         {/* {tech stack} */}
-        <div className="flex justify-center gap-4 text-base font-hnd-bold">
+        <div className="flex flex-wrap justify-center gap-4 text-base font-hnd-bold">
           {techstack.map((item, index) => (
             <h1 key={index}>{item}</h1>
           ))}
@@ -77,15 +82,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <div>
             <a className="flex items-center gap-2" href={repo} target="_blank">
               <p>Repo</p>
-              <img
-                src={githubicon}
-                alt=""
-                className="size-[25px]"
-              />
+              <img src={githubicon} alt="" className="size-[25px]" />
             </a>
           </div>
           {/* {typhoonista isnt deployed yet} */}
-          {name === "Typhoonista" || name === "Chainmed Connect" || name === "AzuraWatch" ? null : (
+          {name === "Typhoonista" ||
+          name === "Chainmed Connect" ||
+          name === "AzuraWatch" ? null : (
             <div>
               <a
                 className="flex items-center gap-2"
@@ -93,11 +96,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 target="_blank"
               >
                 <p>{isMobile ? "Download APK" : "Visit"}</p>
-                <img
-                  src={goto}
-                  alt=""
-                  className="size-[25px]"
-                />
+                <img src={goto} alt="" className="size-[25px]" />
               </a>
             </div>
           )}

@@ -1,21 +1,21 @@
 // import StackIcon from "tech-stack-icons";
 import ProjectCard from "./ProjectCard";
-import typhoonista from './assets/typhoonista_banner.png'
-import visiolife1 from "./assets/Screenshot_1710619145.png"
-import visiolife2 from "./assets/Screenshot_1710617644.png"
-import bandwebsite from "./assets/bandwebsite-snapshot.png"
-import gym1 from "./assets/localhost_53943_ (2).png"
-import gym2 from "./assets/localhost_53943_ (1).png"
-import azura1 from "./assets/azurawatch_1.png"
-import azura2 from "./assets/azurawatch_2.png"
-import chainmed1 from "./assets/chainmed_1.png"
-
+import typhoonista from "./assets/typhoonista_banner.png";
+import visiolife1 from "./assets/Screenshot_1710619145.png";
+import visiolife2 from "./assets/Screenshot_1710617644.png";
+import bandwebsite from "./assets/bandwebsite-snapshot.png";
+import gym1 from "./assets/localhost_53943_ (2).png";
+import gym2 from "./assets/localhost_53943_ (1).png";
+import azura1 from "./assets/azurawatch_1.png";
+import chainmed1 from "./assets/chainmed_1.png";
+import ravesmovies1 from "./assets/raves-movies.vercel.app_.png";
 
 const projects = [
   {
     name: "AzuraWatch",
-    description: "An anime streaming website I made. Powered by Consumet & Anify API",
-    techstack: ["React"],
+    description:
+      "An anime streaming website I made. Powered by Consumet & Anify API",
+    techstack: ["React", "Vite"],
     isMobile: false,
     images: [
       `${azura1}`,
@@ -24,20 +24,37 @@ const projects = [
     bgColor: "green",
     repo: "https://github.com/JohnRaves-Ranara/anime-fullstack-app",
     link: "",
-    id: 5,
+    id: 1,
+    isUnderDevelopment: true,
+  },
+  {
+    name: "Movie Catalog Website",
+    description:
+      "A movie website built with NextJS and powered by TMDb API. This website lets you discover, search, filter movies by genre, and view movie details.",
+    techstack: ["NextJS 14"],
+    isMobile: false,
+    images: [
+      `${ravesmovies1}`,
+      // `${azura2}`,
+    ],
+    bgColor: "green",
+    repo: "https://github.com/JohnRaves-Ranara/MovieWebsite_tmdb-api",
+    link: "https://raves-movies.vercel.app/",
+    id: 2,
+    isUnderDevelopment: false,
   },
   {
     name: "Chainmed Connect",
-    description: "A patient-doctor booking appointment system deployed on the blockchain. Powered by ICP and Web3 technologies. I was one of the frontend devs out of four developers. This was our entry to the 2024 HackerHouse Davao Hackathon where we won 2nd place.",
-    techstack: ["React", "Express"],
+    description:
+      "A patient-doctor booking appointment system deployed on the blockchain. Powered by ICP and Web3 technologies. I was one of the frontend devs out of four developers. This was our entry to the 2024 HackerHouse Davao Hackathon where we won 2nd place.",
+    techstack: ["React", "Vite", "Express"],
     isMobile: false,
-    images: [
-      `${chainmed1}`,
-    ],
+    images: [`${chainmed1}`],
     bgColor: "green",
-    repo: "https://github.com/JohnRaves-Ranara/anime-fullstack-app",
+    repo: "https://github.com/Samshh/Hackathon-Project---The-Launchpad",
     link: "",
-    id: 6,
+    id: 3,
+    isUnderDevelopment: true,
   },
   {
     name: "Typhoonista",
@@ -49,46 +66,21 @@ const projects = [
     bgColor: "blue",
     repo: "https://github.com/JohnRaves-Ranara/typhoonista_",
     link: "",
-    id: 1,
+    id: 4,
+    isUnderDevelopment: false,
   },
   {
     name: "VisioLife",
-    description: "VisioLife is a mobile-app project I made for my Software Engineering 1 and 2 course. It is a vision board app that helps users keep track of their long-term and short-term life goals. It also features a virtual pet companion the user can upgrade by completing their goals.",
+    description:
+      "VisioLife is a mobile-app project I made for my Software Engineering 1 and 2 course. It is a vision board app that helps users keep track of their long-term and short-term life goals. It also features a virtual pet companion the user can upgrade by completing their goals.",
     techstack: ["Flutter", "Firebase"],
     isMobile: true,
-    images: [
-      `${visiolife1}`,
-      `${visiolife2}`,
-    ],
+    images: [`${visiolife1}`, `${visiolife2}`],
     bgColor: "red",
     repo: "https://github.com/JohnRaves-Ranara/VisioLife",
     link: "https://mega.nz/file/NNcCUTxI#Bs07RbmzSMY2E6parJjVD_gapEB3jB8VUW4PkZkdOBI",
-    id: 2,
-  },
-  {
-    name: "Band Website",
-    description: "A personal project website that features the famous albums of one of my favorite indie bands—Day Wave. This site also has its own music player where you can listen to each track. I built this site to enhance my knowledge in manipulating the DOM with Javascript.",
-    techstack: ["HTML", "CSS", "Javascript"],
-    isMobile: false,
-    images: [`${bandwebsite}`],
-    bgColor: "lime",
-    repo: "https://github.com/JohnRaves-Ranara/band-website",
-    link: "https://johnraves-ranara.github.io/band-website/",
-    id: 3,
-  },
-  {
-    name: "Gympulse",
-    description: "A workout app I made for keeping track of the sequence of my workouts. ",
-    techstack: ["Flutter", "Hive"],
-    isMobile: true,
-    images: [
-      `${gym1}`,
-      `${gym2}`,
-    ],
-    bgColor: "green",
-    repo: "https://github.com/JohnRaves-Ranara/workout_app",
-    link: "https://mega.nz/file/EZ0SwTRI#Bs07RbmzSMY2E6parJjVD_gapEB3jB8VUW4PkZkdOBI",
-    id: 4,
+    id: 5,
+    isUnderDevelopment: false,
   },
 ];
 
@@ -106,6 +98,7 @@ export default function Projects() {
       <div className="flex flex-col items-center justify-center gap-32 py-16">
         {projects.map((project) => (
           <ProjectCard
+            isUnderDevelopment={project.isUnderDevelopment}
             name={project.name}
             description={project.description}
             techstack={project.techstack}
