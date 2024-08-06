@@ -85,7 +85,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </a>
           </div>
           {/* {typhoonista isnt deployed yet} */}
-          {name === "Typhoonista" ? null : (
+          {name === "Typhoonista" || name === "Chainmed Connect" || name === "AzuraWatch" ? null : (
             <div>
               <a
                 className="flex items-center gap-2"

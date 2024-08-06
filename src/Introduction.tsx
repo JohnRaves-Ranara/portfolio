@@ -16,7 +16,7 @@ export default function Introduction() {
                 Hello, I'm Raves
               </h1> 
               <p className="text-[20px] text-[#555] font-hnd-thin">
-              CS student passionate about crafting innovative software solutions. Dedicated to continuous improvement. Based in Davao, Philippines.📍
+              Graduating CS student passionate about crafting innovative web solutions with modern technologies. Based in Davao, Philippines.📍
               </p>
               <div className="flex justify-center gap-6 lg:justify-start ">
                 <a href="https://www.linkedin.com/in/johnraves-ranara/" target="_blank"><img src={linkedin} alt="" className="size-[30px]"/></a>
@@ -27,11 +27,13 @@ export default function Introduction() {
         </div>
         <div className="flex flex-wrap items-center justify-center gap-8 lg:justify-start">
           {/* <img src={test} alt="" className="h-[3rem] mobile-s:h-[2.5rem]"/> */}
-          <StackIcon name="flutter" className="h-[2.5rem] mobile-l:h-[3rem]" />
-          <StackIcon name="html5" className="h-[2.5rem] mobile-l:h-[3rem]" />
-          <StackIcon name="css3" className="h-[2.5rem] mobile-l:h-[3rem]" />
+          <StackIcon name="reactjs" className="h-[2.5rem] mobile-l:h-[3rem]"/>
+          <StackIcon name="typescript" className="h-[2.5rem] mobile-l:h-[3rem]" />
           <StackIcon name="js" className="h-[2.5rem] mobile-l:h-[3rem]" />
           <StackIcon name="tailwindcss" className="h-[2.5rem] mobile-l:h-[3rem]" />
+          <StackIcon name="html5" className="h-[2.5rem] mobile-l:h-[3rem]" />
+          <StackIcon name="css3" className="h-[2.5rem] mobile-l:h-[3rem]" />
+          <StackIcon name="flutter" className="h-[2.5rem] mobile-l:h-[3rem]" />
         </div>
       </div>
     </header>

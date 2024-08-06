@@ -6,9 +6,39 @@ import visiolife2 from "./assets/Screenshot_1710617644.png"
 import bandwebsite from "./assets/bandwebsite-snapshot.png"
 import gym1 from "./assets/localhost_53943_ (2).png"
 import gym2 from "./assets/localhost_53943_ (1).png"
+import azura1 from "./assets/azurawatch_1.png"
+import azura2 from "./assets/azurawatch_2.png"
+import chainmed1 from "./assets/chainmed_1.png"
 
 
 const projects = [
+  {
+    name: "AzuraWatch",
+    description: "An anime streaming website I made. Powered by Consumet & Anify API",
+    techstack: ["React"],
+    isMobile: false,
+    images: [
+      `${azura1}`,
+      // `${azura2}`,
+    ],
+    bgColor: "green",
+    repo: "https://github.com/JohnRaves-Ranara/anime-fullstack-app",
+    link: "",
+    id: 5,
+  },
+  {
+    name: "Chainmed Connect",
+    description: "A patient-doctor booking appointment system deployed on the blockchain. Powered by ICP and Web3 technologies. I was one of the frontend devs out of four developers. This was our entry to the 2024 HackerHouse Davao Hackathon where we won 2nd place.",
+    techstack: ["React", "Express"],
+    isMobile: false,
+    images: [
+      `${chainmed1}`,
+    ],
+    bgColor: "green",
+    repo: "https://github.com/JohnRaves-Ranara/anime-fullstack-app",
+    link: "",
+    id: 6,
+  },
   {
     name: "Typhoonista",
     description:
