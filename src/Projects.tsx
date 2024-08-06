@@ -59,7 +59,7 @@ const projects = [
   {
     name: "Typhoonista",
     description:
-      "Typhoonista is our Bachelor's Degree thesis and is a dashboard web-app that aims to aid the Department of Agriculture by providing damage cost forecasts of typhoon-induced rice crop damages using various ML models. I was responsible for the frontend and database-side backend of the website.",
+      "Typhoonista is our Bachelor's Degree thesis and is a dashboard web-app that aims to aid the Department of Agriculture by providing damage cost forecasts of typhoon-induced rice crop damages using various ML models. I was responsible for the frontend and backend of the website.",
     techstack: ["Flutter", "Firebase"],
     isMobile: false,
     images: [`${typhoonista}`],
