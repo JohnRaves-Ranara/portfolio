@@ -1,5 +1,5 @@
 
-import image from './assets/about.jpg'
+// import image from './assets/about.jpg'
 import Example from './SampleDialog'
 
 export default function About()  {
